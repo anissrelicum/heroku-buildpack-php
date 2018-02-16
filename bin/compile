@@ -284,7 +284,7 @@ cd $build_dir/$composer_bindir
 ln -fs $relbins .
 cd $build_dir
 
-source $bp_dir/bin/sqlsrv
+source $bp_dir/bin/sqlsrv.sh
 
 
 if [[ ! -f "Procfile" ]]; then
