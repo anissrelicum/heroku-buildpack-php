@@ -284,6 +284,9 @@ cd $build_dir/$composer_bindir
 ln -fs $relbins .
 cd $build_dir
 
+source $bp_dir/bin/sqlsrv
+
+
 if [[ ! -f "Procfile" ]]; then
     echo "web: heroku-$engine-apache2" > Procfile
     notice_inline "No Procfile, using 'web: heroku-$engine-apache2'."
