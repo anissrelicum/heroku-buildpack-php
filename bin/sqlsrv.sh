@@ -2,10 +2,9 @@
 # Build Path: /app/.heroku/php/
 bp_dir=$(cd $(dirname $0); cd ..; pwd)
 
-curl https://packages.microsoft.com/keys/microsoft.asc |  apt-key add -
+curl https://packages.microsoft.com/keys/microsoft.asc |  su root;apt-key add -
 curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list |  tee /etc/apt/sources.list.d/mssql-tools.list
 echo "--------------------------- 1"
-
 
 su root;apt-get update
 echo "--------------------------- 2"
