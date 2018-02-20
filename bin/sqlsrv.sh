@@ -15,7 +15,7 @@
 # su root;apt-get install -y php7.0-dev
 # echo "--------------------------- 4"
 
-apt-get install -y php-pear
+# apt-get install -y php-pear
 # echo "--------------------------- 5"
 
 # su root;pecl install sqlsrv-5.2.0RC1 pdo_sqlsrv-5.2.0RC1
